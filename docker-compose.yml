@@ -5,12 +5,10 @@ services:
     build:
       context: ./app
       dockerfile: Dockerfile
+    env_file:
+      - .env
     environment:
-      - ELASTICSEARCH_HOST=${ELASTICSEARCH_HOST}
-      - ELASTICSEARCH_USER=${ELASTICSEARCH_USER}
-      - ELASTICSEARCH_PASSWORD=${ELASTICSEARCH_PASSWORD}
-      - INDEX_NAME=news_2025.04
-      - TZ=Asia/Jakarta
+      - ELASTIC_PASSWORD=${ELASTIC_PASSWORD}
     ports:
       - "8000:8000"
     depends_on:
