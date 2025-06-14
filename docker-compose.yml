@@ -10,7 +10,7 @@ services:
     environment:
       - ELASTIC_PASSWORD=${ELASTIC_PASSWORD}
     ports:
-      - "8000:8000"
+      - "8085:8085"
     depends_on:
       - elasticsearch
     networks:
