@@ -61,4 +61,21 @@ pip install -r requirements.txt
 ```python
 python -m uvicorn main:app --reload
 ```
+## API Endpoint
 
+#### Sentiment
+
+```http
+GET /search/sentiment-analysis
+```
+
+#### Berita terbaru
+
+```http
+GET /search/news-details
+```
+
+#### Timeline
+```http
+GET /search/timeline
+```
